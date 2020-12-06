@@ -37,7 +37,23 @@ class ProductTypeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        #validation
+        $request->validate([
+            'name' => 'required|min:4',
+        ]);
+
+        #create a new instance of the product type model
+        #give the instance the new value
+        $productType = new ProductType([
+            'name' => $request['name'],
+            'image' => $request['image'],
+        ]);
+        $productType->save(); #save the instance
+
+        #call the index method, go to the index view
+        return $this->index()->with([
+            'message' => "<b>" . $productType->name . "</b> has been successfully added"
+        ]);
     }
 
     /**
@@ -48,7 +64,8 @@ class ProductTypeController extends Controller
      */
     public function show(ProductType $productType)
     {
-        //
+        $productType->products = $productType->products->toQuery()->paginate(10);
+        return view('productType.show', ['productType' => $productType]);
     }
 
     /**
@@ -59,7 +76,7 @@ class ProductTypeController extends Controller
      */
     public function edit(ProductType $productType)
     {
-        //
+        return view('productType.edit', ['productType' => $productType]);
     }
 
     /**
@@ -71,7 +88,19 @@ class ProductTypeController extends Controller
      */
     public function update(Request $request, ProductType $productType)
     {
-        //
+        $request->validate([
+            'name' => 'required|min:4',
+        ]);
+
+        $productType->update([
+            'name' => $request['name'],
+            'image' => $request['image'],
+        ]);
+        $productType->save();
+
+        return $this->index()->with([
+            'message' => "<b>" . $productType->name . "</b> has been successfully updated"
+        ]);
     }
 
     /**
@@ -82,6 +111,10 @@ class ProductTypeController extends Controller
      */
     public function destroy(ProductType $productType)
     {
-        //
+        $oldName = $productType->name;
+        $productType->delete();
+        return $this->index()->with([
+            'message' => "<b>" . $oldName . "</b> has been successfully deleted"
+        ]);
     }
 }

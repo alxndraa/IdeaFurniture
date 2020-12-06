@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ProductTypeController@index');
+
+#Route::get('/{id}', 'ProductController@index');
+#Route::get('/{id}/show', 'ProductController@show');
+
+//('name', 'controller')
+Route::resource('productType', 'ProductTypeController');
+#Route::resource('product', 'ProductController');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

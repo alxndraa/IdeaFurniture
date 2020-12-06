@@ -75,6 +75,20 @@
         </nav>
 
         <main class="py-4">
+            @isset($message)
+                <div class="alert alert-success alert-block" role="alert">
+                    <button class="close" data-dismiss="alert">x</button>
+                    {!! $message !!}
+                </div>
+            @endisset
+            <!--
+            @if($message = Session::get('success'))
+                <div class="alert alert-success alert-block">
+                    <button class="close" data-dismiss="alert">x</button>
+                    {{ $message }}
+                </div>
+            @endif!-->
+
             @yield('content')
         </main>
     </div>
