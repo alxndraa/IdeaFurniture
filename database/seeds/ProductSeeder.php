@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'GODMORGON',
-                'photo'=>'10.jpg',
+                'image'=>'10.jpg',
                 'desc'=>'Wash-stand with 2 drawers, white stained oak effect',
                 'price'=>2995000,
                 'stock'=>53,
@@ -24,7 +24,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'LILLÅNGEN',
-                'photo'=>'11.jpg',
+                'image'=>'11.jpg',
                 'desc'=>'Mirror cabinet with 1 door, white',
                 'price'=>795000,
                 'stock'=>34,
@@ -32,7 +32,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'HEMNES',
-                'photo'=>'12.jpg',
+                'image'=>'12.jpg',
                 'desc'=>'High cabinet with glass door, black-brown',
                 'price'=>249000,
                 'stock'=>63,
@@ -40,7 +40,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'TYNGEN',
-                'photo'=>'13.jpg',
+                'image'=>'13.jpg',
                 'desc'=>'Wash-basin, white/Pilkån tap',
                 'price'=>1790000,
                 'stock'=>'32',
@@ -48,7 +48,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'SILVERÅN',
-                'photo'=>'14.jpg',
+                'image'=>'14.jpg',
                 'desc'=>'High cabinet with 2 doors, white',
                 'price'=>1895000,
                 'stock'=>51,
@@ -56,7 +56,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'HEMNES/HAGAVIKEN',
-                'photo'=>'15.jpg',
+                'image'=>'15.jpg',
                 'desc'=>'Wash-stand with 2 drawers, black-brown',
                 'price'=>3990000,
                 'stock'=>83,
@@ -64,7 +64,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'TOLKEN/GODMORGON',
-                'photo'=>'16.jpg',
+                'image'=>'16.jpg',
                 'desc'=>'Wash-stand with 2 drawers, white/anthracite',
                 'price'=>3495000,
                 'stock'=>78,
@@ -72,7 +72,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'TYNGEN/RÅGRUND',
-                'photo'=>'17.jpg',
+                'image'=>'17.jpg',
                 'desc'=>'Wash-basin/corner shelf, bamboo/Pilkån tap',
                 'price'=>2788000,
                 'stock'=>19,
@@ -80,7 +80,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'TOLKEN',
-                'photo'=>'18.jpg',
+                'image'=>'18.jpg',
                 'desc'=>'Countertop, marble effect',
                 'price'=>1000000,
                 'stock'=>38,
@@ -88,7 +88,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'VISKAN',
-                'photo'=>'19.jpg',
+                'image'=>'19.jpg',
                 'desc'=>'Countertop, grey',
                 'price'=>250000,
                 'stock'=>91,
@@ -96,7 +96,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'KATTEVIK/HEMNES',
-                'photo'=>'110.jpg',
+                'image'=>'110.jpg',
                 'desc'=>'Open wash-stand with 40 wash-basin, white/Voxnan tap',
                 'price'=>6585000,
                 'stock'=>74,
@@ -104,7 +104,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'VILTO/ODENSVIK',
-                'photo'=>'111.jpg',
+                'image'=>'111.jpg',
                 'desc'=>'Wash-stand with 1 drawer, birch/LUNDSKÄR tap',
                 'price'=>5785000,
                 'stock'=>39,
@@ -112,7 +112,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>1,
                 'name'=>'DYNAN',
-                'photo'=>'112.jpg',
+                'image'=>'112.jpg',
                 'desc'=>'Mirror cabinet with 2 base cabinets, white',
                 'price'=>1597000,
                 'stock'=>37,
@@ -121,7 +121,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'TARVA',
-                'photo'=>'20.jpg',
+                'image'=>'20.jpg',
                 'desc'=>'Bed frame, birch/Luröy',
                 'price'=>5699000,
                 'stock'=>71,
@@ -129,7 +129,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'GJÖRA',
-                'photo'=>'21.jpg',
+                'image'=>'21.jpg',
                 'desc'=>'Bed frame, birch/Luröy',
                 'price'=>5699000,
                 'stock'=>71,
@@ -137,7 +137,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'DELAKTIG',
-                'photo'=>'22.jpg',
+                'image'=>'22.jpg',
                 'desc'=>'Bed frame with headboard, aluminium/black',
                 'price'=>6798000,
                 'stock'=>12,
@@ -145,7 +145,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'HAUGA',
-                'photo'=>'23.jpg',
+                'image'=>'23.jpg',
                 'desc'=>'Upholstered bed frame, Vissle grey',
                 'price'=>2299000,
                 'stock'=>36,
@@ -153,7 +153,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'MALM',
-                'photo'=>'24.jpg',
+                'image'=>'24.jpg',
                 'desc'=>'Bed frame, high, brown stained ash veneer/Luröy',
                 'price'=>2799000,
                 'stock'=>18,
@@ -161,7 +161,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'SLATTUM',
-                'photo'=>'25.jpg',
+                'image'=>'25.jpg',
                 'desc'=>'Upholstered bed frame, Knisa light grey',
                 'price'=>2999000,
                 'stock'=>59,
@@ -169,7 +169,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'LEIRVIK',
-                'photo'=>'26.jpg',
+                'image'=>'26.jpg',
                 'desc'=>'Bed frame, white/Lönset',
                 'price'=>3999000,
                 'stock'=>49,
@@ -178,7 +178,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'TYSSEDAL',
-                'photo'=>'27.jpg',
+                'image'=>'27.jpg',
                 'desc'=>'Bed frame, white/Luröy',
                 'price'=>4599000,
                 'stock'=>4,
@@ -186,7 +186,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'TUFJORD',
-                'photo'=>'28.jpg',
+                'image'=>'28.jpg',
                 'desc'=>'Upholstered bed frame, Djuparp dark green',
                 'price'=>9999000,
                 'stock'=>10,
@@ -195,7 +195,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'SAGSTUA',
-                'photo'=>'29.jpg',
+                'image'=>'29.jpg',
                 'desc'=>'Bed frame, white/Luröy',
                 'price'=>2899000,
                 'stock'=>97,
@@ -203,7 +203,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'GRIMSBU',
-                'photo'=>'210.jpg',
+                'image'=>'210.jpg',
                 'desc'=>'Bed frame, white/Luröy',
                 'price'=>1499000,
                 'stock'=>50,
@@ -211,7 +211,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'ASKVOLL',
-                'photo'=>'211.jpg',
+                'image'=>'211.jpg',
                 'desc'=>'Bed frame, white/Luröy',
                 'price'=>3499000,
                 'stock'=>28,
@@ -219,7 +219,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>2,
                 'name'=>'SONGESAND',
-                'photo'=>'212.jpg',
+                'image'=>'212.jpg',
                 'desc'=>'Bed frame, brown/Lönset',
                 'price'=>4299000,
                 'stock'=>26,
@@ -228,7 +228,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'BILLY',
-                'photo'=>'30.jpg',
+                'image'=>'30.jpg',
                 'desc'=>'Bookcase, white',
                 'price'=>1799000,
                 'stock'=>71,
@@ -236,7 +236,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'GERSBY',
-                'photo'=>'31.jpg',
+                'image'=>'31.jpg',
                 'desc'=>'Bookcase, white',
                 'price'=>599000,
                 'stock'=>48,
@@ -244,7 +244,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'LIATORP',
-                'photo'=>'32.jpg',
+                'image'=>'32.jpg',
                 'desc'=>'Bookcase, white',
                 'price'=>4999000,
                 'stock'=>53,
@@ -252,7 +252,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'BRIMNES',
-                'photo'=>'33.jpg',
+                'image'=>'33.jpg',
                 'desc'=>'Bookcase, white',
                 'price'=>1799000,
                 'stock'=>20,
@@ -260,7 +260,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'LAIVA',
-                'photo'=>'34.jpg',
+                'image'=>'34.jpg',
                 'desc'=>'Bookcase, black-brown',
                 'price'=>399000,
                 'stock'=>60,
@@ -268,7 +268,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'LOMMARP',
-                'photo'=>'35.jpg',
+                'image'=>'35.jpg',
                 'desc'=>'Bookcase, dark blue-green',
                 'price'=>2799000,
                 'stock'=>16,
@@ -276,7 +276,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'BRUSALI',
-                'photo'=>'36.jpg',
+                'image'=>'36.jpg',
                 'desc'=>'Bookcase, white',
                 'price'=>1799000,
                 'stock'=>92,
@@ -284,7 +284,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'FINNBY',
-                'photo'=>'37.jpg',
+                'image'=>'37.jpg',
                 'desc'=>'Bookcase, black',
                 'price'=>899000,
                 'stock'=>19,
@@ -292,7 +292,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'BILLY/MORLIDEN',
-                'photo'=>'38.jpg',
+                'image'=>'38.jpg',
                 'desc'=>'Bookcase with glass-doors, white stained oak veneer/glass',
                 'price'=>2399000,
                 'stock'=>35,
@@ -300,7 +300,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'OXBERG',
-                'photo'=>'39.jpg',
+                'image'=>'39.jpg',
                 'desc'=>'Door, white',
                 'price'=>500000,
                 'stock'=>81,
@@ -308,7 +308,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'BILLY/OXBERG',
-                'photo'=>'310.jpg',
+                'image'=>'310.jpg',
                 'desc'=>'Bookcase with glass-doors, black-brown',
                 'price'=>5348000,
                 'stock'=>18,
@@ -316,7 +316,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'OXBERG/BILLY',
-                'photo'=>'311.jpg',
+                'image'=>'311.jpg',
                 'desc'=>'Bookcase with doors, white',
                 'price'=>1799000,
                 'stock'=>38,
@@ -324,7 +324,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>3,
                 'name'=>'BILLY/MORLIDEN',
-                'photo'=>'312.jpg',
+                'image'=>'312.jpg',
                 'desc'=>'Bookcase with glass door, white stained oak veneer/glass',
                 'price'=>1499000,
                 'stock'=>54,
@@ -333,7 +333,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'IKEA 365+',
-                'photo'=>'40.jpg',
+                'image'=>'40.jpg',
                 'desc'=>'Bowl, rounded sides white',
                 'price'=>49900,
                 'stock'=>19,
@@ -341,7 +341,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'DINERA',
-                'photo'=>'41.jpg',
+                'image'=>'41.jpg',
                 'desc'=>'18-piece service, beige',
                 'price'=>399000,
                 'stock'=>29,
@@ -349,7 +349,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'FÄRGRIK',
-                'photo'=>'42.jpg',
+                'image'=>'42.jpg',
                 'desc'=>'18-piece service, light green',
                 'price'=>499000,
                 'stock'=>49,
@@ -357,7 +357,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'SANNING',
-                'photo'=>'43.jpg',
+                'image'=>'43.jpg',
                 'desc'=>'Bowl, white/patterned',
                 'price'=>29900,
                 'stock'=>79,
@@ -365,7 +365,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'UTEFEST',
-                'photo'=>'44.jpg',
+                'image'=>'44.jpg',
                 'desc'=>'Side plate, mixed colours',
                 'price'=>49900,
                 'stock'=>93,
@@ -373,7 +373,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'SPORADISK',
-                'photo'=>'45.jpg',
+                'image'=>'45.jpg',
                 'desc'=>'Bowl, angled sides white/blue',
                 'price'=>49900,
                 'stock'=>81,
@@ -381,7 +381,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'FLITIGHET',
-                'photo'=>'46.jpg',
+                'image'=>'46.jpg',
                 'desc'=>'Bowl, white',
                 'price'=>24900,
                 'stock'=>100,
@@ -389,7 +389,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'VARDAGEN',
-                'photo'=>'47.jpg',
+                'image'=>'47.jpg',
                 'desc'=>'Bowl, clear glass',
                 'price'=>29900,
                 'stock'=>48,
@@ -397,7 +397,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'BLANDA',
-                'photo'=>'48.jpg',
+                'image'=>'48.jpg',
                 'desc'=>'Serving bowl, clear glass',
                 'price'=>29900,
                 'stock'=>70,
@@ -405,7 +405,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'TRYGG',
-                'photo'=>'49.jpg',
+                'image'=>'49.jpg',
                 'desc'=>'Serving bowl, clear glass',
                 'price'=>39900,
                 'stock'=>40,
@@ -413,7 +413,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'KLYFTA',
-                'photo'=>'410.jpg',
+                'image'=>'410.jpg',
                 'desc'=>'Bread basket, bamboo',
                 'price'=>89900,
                 'stock'=>85,
@@ -421,7 +421,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'BESEGRA',
-                'photo'=>'411.jpg',
+                'image'=>'411.jpg',
                 'desc'=>'Bowl, light turquoise',
                 'price'=>99900,
                 'stock'=>81,
@@ -429,7 +429,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>4,
                 'name'=>'UPPVISPAD',
-                'photo'=>'412.jpg',
+                'image'=>'412.jpg',
                 'desc'=>'Plate, white',
                 'price'=>99900,
                 'stock'=>19,
@@ -438,7 +438,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'ARKELSTORP',
-                'photo'=>'50.jpg',
+                'image'=>'50.jpg',
                 'desc'=>'Desk, black',
                 'price'=>2999000,
                 'stock'=>16,
@@ -446,7 +446,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'FJÄLLBO',
-                'photo'=>'51.jpg',
+                'image'=>'51.jpg',
                 'desc'=>'Laptop table, black',
                 'price'=>999000,
                 'stock'=>38,
@@ -454,7 +454,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'LISABO',
-                'photo'=>'52.jpg',
+                'image'=>'52.jpg',
                 'desc'=>'Desk, ash veneer',
                 'price'=>2499000,
                 'stock'=>61,
@@ -462,7 +462,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'MICKE',
-                'photo'=>'53.jpg',
+                'image'=>'53.jpg',
                 'desc'=>'Desk, white',
                 'price'=>1499000,
                 'stock'=>28,
@@ -470,7 +470,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'ALEX',
-                'photo'=>'54.jpg',
+                'image'=>'54.jpg',
                 'desc'=>'Drawer unit, white',
                 'price'=>1370000,
                 'stock'=>57,
@@ -478,7 +478,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'FREDDE',
-                'photo'=>'55.jpg',
+                'image'=>'55.jpg',
                 'desc'=>'Desk, black',
                 'price'=>3499000,
                 'stock'=>37,
@@ -486,7 +486,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'LOMMARP',
-                'photo'=>'56.jpg',
+                'image'=>'56.jpg',
                 'desc'=>'Desk, light beige',
                 'price'=>2499000,
                 'stock'=>37,
@@ -494,7 +494,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'MALM',
-                'photo'=>'57.jpg',
+                'image'=>'57.jpg',
                 'desc'=>'Desk with pull-out panel, white',
                 'price'=>2299000,
                 'stock'=>48,
@@ -502,7 +502,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'KRILLE/LINNMON',
-                'photo'=>'58.jpg',
+                'image'=>'58.jpg',
                 'desc'=>'Desk, white',
                 'price'=>1289000,
                 'stock'=>13,
@@ -510,7 +510,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'ADILS/LINNMON',
-                'photo'=>'59.jpg',
+                'image'=>'59.jpg',
                 'desc'=>'Table, white',
                 'price'=>549000,
                 'stock'=>31,
@@ -518,7 +518,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'VITTSJÖ',
-                'photo'=>'510.jpg',
+                'image'=>'510.jpg',
                 'desc'=>'Laptop table, white/glass',
                 'price'=>699000,
                 'stock'=>22,
@@ -526,7 +526,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'INGATORP',
-                'photo'=>'511.jpg',
+                'image'=>'511.jpg',
                 'desc'=>'Desk, black',
                 'price'=>2499000,
                 'stock'=>26,
@@ -534,7 +534,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>5,
                 'name'=>'KULLABERG',
-                'photo'=>'512.jpg',
+                'image'=>'512.jpg',
                 'desc'=>'Desk, pine/black',
                 'price'=>2499000,
                 'stock'=>58,
@@ -543,7 +543,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'GRUBBAN',
-                'photo'=>'60.jpg',
+                'image'=>'60.jpg',
                 'desc'=>'Step stool, white/birch',
                 'price'=>249000,
                 'stock'=>38,
@@ -551,7 +551,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'RÅSHULT',
-                'photo'=>'61.jpg',
+                'image'=>'61.jpg',
                 'desc'=>'Trolley, white',
                 'price'=>499000,
                 'stock'=>61,
@@ -559,7 +559,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'NISSAFORS',
-                'photo'=>'62.jpg',
+                'image'=>'62.jpg',
                 'desc'=>'Trolley, white',
                 'price'=>599000,
                 'stock'=>29,
@@ -567,7 +567,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'MÄSTERBY',
-                'photo'=>'63.jpg',
+                'image'=>'63.jpg',
                 'desc'=>'Step stool, brown-red',
                 'price'=>399000,
                 'stock'=>51,
@@ -575,7 +575,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'RÅSKOG',
-                'photo'=>'64.jpg',
+                'image'=>'64.jpg',
                 'desc'=>'Trolley, white',
                 'price'=>699000,
                 'stock'=>76,
@@ -583,7 +583,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'TORNVIKEN',
-                'photo'=>'65.jpg',
+                'image'=>'65.jpg',
                 'desc'=>'Kitchen island, off-white/oak',
                 'price'=>6999000,
                 'stock'=>30,
@@ -591,7 +591,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'VADHOLMA',
-                'photo'=>'66.jpg',
+                'image'=>'66.jpg',
                 'desc'=>'Rack for kitchen island, black',
                 'price'=>1500000,
                 'stock'=>10,
@@ -599,7 +599,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'KUNGSFORS',
-                'photo'=>'67.jpg',
+                'image'=>'67.jpg',
                 'desc'=>'Kitchen trolley, stainless steel',
                 'price'=>2499000,
                 'stock'=>65,
@@ -607,7 +607,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'STENSTORP',
-                'photo'=>'68.jpg',
+                'image'=>'68.jpg',
                 'desc'=>'Kitchen trolley, white/oak',
                 'price'=>3999000,
                 'stock'=>39,
@@ -615,7 +615,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'VADHOLMA',
-                'photo'=>'69.jpg',
+                'image'=>'69.jpg',
                 'desc'=>'Kitchen island, black/oak',
                 'price'=>7999000,
                 'stock'=>56,
@@ -623,7 +623,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'RIMFORSA',
-                'photo'=>'610.jpg',
+                'image'=>'610.jpg',
                 'desc'=>'Work bench, stainless steel/bamboo',
                 'price'=>8999000,
                 'stock'=>11,
@@ -631,7 +631,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'SUNNERSTA',
-                'photo'=>'611.jpg',
+                'image'=>'611.jpg',
                 'desc'=>'Trolley',
                 'price'=>399000,
                 'stock'=>18,
@@ -639,7 +639,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>6,
                 'name'=>'BEKVÄM',
-                'photo'=>'612.jpg',
+                'image'=>'612.jpg',
                 'desc'=>'Step stool, white',
                 'price'=>399000,
                 'stock'=>32,
@@ -648,7 +648,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'MARKUS',
-                'photo'=>'70.jpg',
+                'image'=>'70.jpg',
                 'desc'=>'Office chair, Vissle dark grey',
                 'price'=>2999000,
                 'stock'=>52,
@@ -656,7 +656,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'LÅNGFJÄLL',
-                'photo'=>'71.jpg',
+                'image'=>'71.jpg',
                 'desc'=>'Conference chair, Gunnared dark grey/white',
                 'price'=>1999000,
                 'stock'=>43,
@@ -664,7 +664,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'LIDKULLEN',
-                'photo'=>'72.jpg',
+                'image'=>'72.jpg',
                 'desc'=>'Active sit/stand support, Gunnared beige',
                 'price'=>1499000,
                 'stock'=>38,
@@ -672,7 +672,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'TROLLBERGET',
-                'photo'=>'73.jpg',
+                'image'=>'73.jpg',
                 'desc'=>'Active sit/stand support, Grann beige',
                 'price'=>1999000,
                 'stock'=>71,
@@ -680,7 +680,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'HATTEFJÄLL',
-                'photo'=>'74.jpg',
+                'image'=>'74.jpg',
                 'desc'=>'Office chair, Gunnared beige',
                 'price'=>4999000,
                 'stock'=>39,
@@ -688,7 +688,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'ALEFJÄLL',
-                'photo'=>'75.jpg',
+                'image'=>'75.jpg',
                 'desc'=>'Office chair, Grann golden-brown',
                 'price'=>4999000,
                 'stock'=>39,
@@ -696,7 +696,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'FLINTAN',
-                'photo'=>'76.jpg',
+                'image'=>'76.jpg',
                 'desc'=>'Office chair, Vissle grey',
                 'price'=>999000,
                 'stock'=>28,
@@ -704,7 +704,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'FJÄLLBERGET',
-                'photo'=>'77.jpg',
+                'image'=>'77.jpg',
                 'desc'=>'Conference chair with castors, black stained ash veneer/Gunnared dark grey',
                 'price'=>3299000,
                 'stock'=>29,
@@ -712,7 +712,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'JÄRVFJÄLLET',
-                'photo'=>'78.jpg',
+                'image'=>'78.jpg',
                 'desc'=>'Office chair with armrests, Gunnared dark grey/black',
                 'price'=>3499000,
                 'stock'=>13,
@@ -720,7 +720,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'FLINTAN/NOMINELL',
-                'photo'=>'79.jpg',
+                'image'=>'79.jpg',
                 'desc'=>'Office chair with armrests, black',
                 'price'=>1249000,
                 'stock'=>31,
@@ -728,7 +728,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'LÅNGFJÄLL',
-                'photo'=>'710.jpg',
+                'image'=>'710.jpg',
                 'desc'=>'Office chair with armrests, Gunnared light brown-pink/white',
                 'price'=>3199000,
                 'stock'=>69,
@@ -736,7 +736,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'LÅNGFJÄLL',
-                'photo'=>'711.jpg',
+                'image'=>'711.jpg',
                 'desc'=>'Conference chair with armrests, Gunnared blue/black',
                 'price'=>2499000,
                 'stock'=>71,
@@ -744,7 +744,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>7,
                 'name'=>'JÄRVFJÄLLET',
-                'photo'=>'712.jpg',
+                'image'=>'712.jpg',
                 'desc'=>'Office chair with armrests, Gunnared beige/white',
                 'price'=>3499000,
                 'stock'=>38,
@@ -753,7 +753,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'HEMLINGBY',
-                'photo'=>'80.jpg',
+                'image'=>'80.jpg',
                 'desc'=>'Two-seat sofa, Bomstad black',
                 'price'=>2995000,
                 'stock'=>42,
@@ -761,7 +761,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'KLIPPAN',
-                'photo'=>'81.jpg',
+                'image'=>'81.jpg',
                 'desc'=>'2-seat sofa, Vissle grey',
                 'price'=>2895000,
                 'stock'=>34,
@@ -769,7 +769,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'KNOPPARP',
-                'photo'=>'82.jpg',
+                'image'=>'82.jpg',
                 'desc'=>'2-seat sofa, Knisa light grey',
                 'price'=>1995000,
                 'stock'=>26,
@@ -777,7 +777,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'KIVIK',
-                'photo'=>'83.jpg',
+                'image'=>'83.jpg',
                 'desc'=>'4-seat sofa, with chaise longue/Grann/Bomstad black',
                 'price'=>29990000,
                 'stock'=>45,
@@ -785,7 +785,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'SÖDERHAMN',
-                'photo'=>'84.jpg',
+                'image'=>'84.jpg',
                 'desc'=>'1-seat section, Finnsta white',
                 'price'=>4995000,
                 'stock'=>8,
@@ -793,7 +793,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'LIDHULT',
-                'photo'=>'85.jpg',
+                'image'=>'85.jpg',
                 'desc'=>'2-seat sofa, Lejde grey/black',
                 'price'=>8995000,
                 'stock'=>5,
@@ -801,7 +801,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'SÖDERHAMN',
-                'photo'=>'86.jpg',
+                'image'=>'86.jpg',
                 'desc'=>'3-seat section, Samsta dark grey',
                 'price'=>8495000,
                 'stock'=>18,
@@ -809,7 +809,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'GRÖNLID',
-                'photo'=>'87.jpg',
+                'image'=>'87.jpg',
                 'desc'=>'Chaise longue, Ljungen light red',
                 'price'=>7595000,
                 'stock'=>36,
@@ -817,7 +817,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'VIMLE',
-                'photo'=>'88.jpg',
+                'image'=>'88.jpg',
                 'desc'=>'Footstool with storage, Dalstorp multicolour',
                 'price'=>2995000,
                 'stock'=>21,
@@ -825,7 +825,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'EKTORP',
-                'photo'=>'89.jpg',
+                'image'=>'89.jpg',
                 'desc'=>'2-seat sofa',
                 'price'=>4995000,
                 'stock'=>17,
@@ -833,7 +833,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'VINLIDEN',
-                'photo'=>'810.jpg',
+                'image'=>'810.jpg',
                 'desc'=>'Cover for 2-seat sofa, Hakebo beige',
                 'price'=>1600000,
                 'stock'=>54,
@@ -841,7 +841,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'VALLENTUNA',
-                'photo'=>'811.jpg',
+                'image'=>'811.jpg',
                 'desc'=>'2-seat modular sofa, Orrsta olive-green',
                 'price'=>15600000,
                 'stock'=>37,
@@ -849,7 +849,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>8,
                 'name'=>'DELAKTIG',
-                'photo'=>'812.jpg',
+                'image'=>'812.jpg',
                 'desc'=>'2-seat platform, Gunnared medium grey',
                 'price'=>7095000,
                 'stock'=>32,
@@ -858,7 +858,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'BRYGGJA',
-                'photo'=>'90.jpg',
+                'image'=>'90.jpg',
                 'desc'=>'Open wardrobe, dark grey',
                 'price'=>3999000,
                 'stock'=>39,
@@ -866,7 +866,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'RAKKESTAD',
-                'photo'=>'91.jpg',
+                'image'=>'91.jpg',
                 'desc'=>'Wardrobe with 3 doors, black-brown',
                 'price'=>2399000,
                 'stock'=>27,
@@ -874,7 +874,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'KLEPPSTAD',
-                'photo'=>'92.jpg',
+                'image'=>'92.jpg',
                 'desc'=>'Wardrobe with 2 doors, white',
                 'price'=>1399000,
                 'stock'=>42,
@@ -882,7 +882,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'BRIMNES',
-                'photo'=>'93.jpg',
+                'image'=>'93.jpg',
                 'desc'=>'Wardrobe with 3 doors, white',
                 'price'=>2599000,
                 'stock'=>39,
@@ -890,7 +890,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'MUSKEN',
-                'photo'=>'94.jpg',
+                'image'=>'94.jpg',
                 'desc'=>'Wardrobe with 2 doors+3 drawers, white',
                 'price'=>3999000,
                 'stock'=>10,
@@ -898,7 +898,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'TRYSIL',
-                'photo'=>'95.jpg',
+                'image'=>'95.jpg',
                 'desc'=>'Wardrobe, white/mirror glass',
                 'price'=>3499000,
                 'stock'=>16,
@@ -906,7 +906,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'SYVDE',
-                'photo'=>'96.jpg',
+                'image'=>'96.jpg',
                 'desc'=>'Open wardrobe, white',
                 'price'=>2000000,
                 'stock'=>48,
@@ -914,7 +914,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'VISTHUS',
-                'photo'=>'97.jpg',
+                'image'=>'97.jpg',
                 'desc'=>'Wardrobe, grey/white',
                 'price'=>5999000,
                 'stock'=>13,
@@ -922,7 +922,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'VUKU',
-                'photo'=>'98.jpg',
+                'image'=>'98.jpg',
                 'desc'=>'Wardrobe, white',
                 'price'=>299000,
                 'stock'=>39,
@@ -930,7 +930,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'SONGESAND',
-                'photo'=>'99.jpg',
+                'image'=>'99.jpg',
                 'desc'=>'Wardrobe, brown',
                 'price'=>3499000,
                 'stock'=>19,
@@ -938,7 +938,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'TYSSEDAL',
-                'photo'=>'910.jpg',
+                'image'=>'910.jpg',
                 'desc'=>'Wardrobe, white/mirror glass',
                 'price'=>5999000,
                 'stock'=>4,
@@ -946,7 +946,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'NORDKISA',
-                'photo'=>'911.jpg',
+                'image'=>'911.jpg',
                 'desc'=>'Open wardrobe with sliding door, bamboo',
                 'price'=>3299000,
                 'stock'=>18,
@@ -954,7 +954,7 @@ class ProductSeeder extends Seeder
             [
                 'product_type_id'=>9,
                 'name'=>'HEMNES',
-                'photo'=>'912.jpg',
+                'image'=>'912.jpg',
                 'desc'=>'Open wardrobe, white stained',
                 'price'=>2999000,
                 'stock'=>28,

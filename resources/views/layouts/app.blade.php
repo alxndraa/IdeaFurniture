@@ -75,19 +75,18 @@
         </nav>
 
         <main class="py-4">
-            @isset($message)
+            <a href="/productType/create" class="btn btn-secondary card-link">
+                <!--icon pke font awesome!-->
+                <i class="fas fa-plus-circle"></i>Product Type
+            </a>
+            <a href="/product/create" class="btn btn-secondary card-link">Product</a>
+            
+            @if(Session::has('message'))
                 <div class="alert alert-success alert-block" role="alert">
                     <button class="close" data-dismiss="alert">x</button>
-                    {!! $message !!}
+                    {!! Session::pull('message') !!}
                 </div>
-            @endisset
-            <!--
-            @if($message = Session::get('success'))
-                <div class="alert alert-success alert-block">
-                    <button class="close" data-dismiss="alert">x</button>
-                    {{ $message }}
-                </div>
-            @endif!-->
+            @endif
 
             @yield('content')
         </main>
