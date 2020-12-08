@@ -28,7 +28,7 @@
                     </div>
                     
                     <input class="btn btn-primary card-link" type="submit" value="Submit">
-                    <a href="/" class="btn btn-secondary card-link">Cancel</a>
+                    <a href="{{ url()->previous() }}" class="btn btn-secondary card-link">Cancel</a>
                 </form>
             </div>
         </div>

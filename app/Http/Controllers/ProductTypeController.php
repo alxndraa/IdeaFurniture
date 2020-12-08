@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\ProductType;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ProductTypeController extends Controller
 {
@@ -52,7 +53,8 @@ class ProductTypeController extends Controller
 
         #call the index method, go to the index view
         return $this->index()->with([
-            'message' => "<b>" . $productType->name . "</b> has been successfully added"
+            Session::put('message', "<b>" . $productType->name . "</b> has been successfully added")
+            //'message' => "<b>" . $productType->name . "</b> has been successfully added"
         ]);
     }
 
@@ -99,7 +101,7 @@ class ProductTypeController extends Controller
         $productType->save();
 
         return $this->index()->with([
-            'message' => "<b>" . $productType->name . "</b> has been successfully updated"
+            Session::put('message', "<b>" . $productType->name . "</b> has been successfully updated")
         ]);
     }
 
@@ -114,7 +116,8 @@ class ProductTypeController extends Controller
         $oldName = $productType->name;
         $productType->delete();
         return $this->index()->with([
-            'message' => "<b>" . $oldName . "</b> has been successfully deleted"
+            Session::put('message', "<b>" . $oldName . "</b> has been successfully deleted")
+            //'message' => "<b>" . $oldName . "</b> has been successfully deleted"
         ]);
     }
 }

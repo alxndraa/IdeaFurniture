@@ -9,17 +9,12 @@
                         <img src="" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="/product/{{$product->id}}">{{ $product->name }}</a>
+                                <a href="/{{$product->id}}">{{ $product->name }}</a>
                             </h5>
                             <p class="card-text">Rp. {{ $product->price }}</p>
                             <p class="card-text">{{ $product->desc }}</p>
-
-                            <a href="/product/{{$product->id}}/edit" class="btn btn-primary">Update</a>
-                            <form action="/product/{{$product->id}}" method="post" style="display:inline">
-                                @csrf
-                                @method("DELETE")
-                                <input type="submit" class="btn btn-outline-danger" value="Delete">
-                            </form>
+                            <a href="" class="btn btn-primary card-link">Update</a>
+                            <a href="" class="btn btn-secondary card-link">Delete</a>
                         </div>
                     </div>
                 </div>

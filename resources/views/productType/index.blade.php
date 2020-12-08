@@ -1,12 +1,6 @@
 @extends('layouts/app')
 
 @section('content')
-    <a href="/productType/create" class="btn btn-secondary card-link">
-        <!--icon pke font awesome!-->
-        <i class="fas fa-plus-circle"></i>Product Type
-    </a>
-    <a href="/product/create" class="btn btn-secondary card-link">Product</a>
-
     <div class="container">
         <div class="row row-cols-3">
             @foreach($productTypes as $productType)
