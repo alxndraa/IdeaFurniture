@@ -54,12 +54,25 @@
                                 </li>
                             @endif
                         @else
+                            @if(Auth::user()->role == 'admin')
+                            <a href="/productType/create" class="nav-link">Add Product</a>
+                            <a href="/product/create" class="nav-link">Add Product Type</a>
+                            @endif
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    @if(Auth::user()->role !== 'admin')
+                                        <a href="/edit_Profile" class="dropdown-item">Edit Profile</a>
+                                        <a href="/cart" class="dropdown-item">Shopping Cart</a>
+                                        <a href="/history" class="dropdown-item">Transaction History</a>
+
+                                        <hr class="dropdown-divide">
+                                    @endif
+                                    
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -78,12 +91,6 @@
         </nav>
 
         <main class="py-4">
-            <a href="/productType/create" class="btn btn-secondary card-link">
-                <!--icon pke font awesome!-->
-                <i class="fas fa-plus-circle"></i>Product Type
-            </a>
-            <a href="/product/create" class="btn btn-secondary card-link">Product</a>
-            
             @if(Session::has('message'))
                 <div class="alert alert-success alert-block" role="alert">
                     <button class="close" data-dismiss="alert">x</button>

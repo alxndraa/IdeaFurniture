@@ -11,12 +11,17 @@
                             <h5 class="card-title">
                                 <a href="/productType/{{$productType->id}}">{{ $productType->name }}</a>
                             </h5>
-                            <a href="/productType/{{$productType->id}}/edit" class="btn btn-primary">Update</a>
-                            <form action="/productType/{{$productType->id}}" method="post" style="display:inline">
-                                @csrf
-                                @method("DELETE")
-                                <input class="btn btn-outline-danger" type="submit" value="Delete">
-                            </form>
+                            
+                            @auth
+                                @if(Auth::user()->role == 'admin')
+                                    <a href="/productType/{{$productType->id}}/edit" class="btn btn-primary">Update</a>
+                                    <form action="/productType/{{$productType->id}}" method="post" style="display:inline">
+                                        @csrf
+                                        @method("DELETE")
+                                        <input class="btn btn-outline-danger" type="submit" value="Delete">
+                                    </form>
+                                @endif
+                            @endauth
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\ProductType;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        #uses all() eloquent function to retrieve all product types
+        $productTypes = ProductType::all();
+        return view('productType.index', ['productTypes' => $productTypes]);
     }
 }

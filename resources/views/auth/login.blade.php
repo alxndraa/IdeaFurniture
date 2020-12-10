@@ -49,6 +49,3 @@
     </div>
 </div>
 @endsection
-Address		: Minimum 10 chars
-	Gender		: Select male ato female
-	DOB		: Date must be before today

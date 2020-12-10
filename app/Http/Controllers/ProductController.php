@@ -10,6 +10,14 @@ use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
+    //Middleware to limit the pages that guest can view
+    //Guest and member can only view the show page and search page
+    //Admin can accessed all the pages
+    public function __construct()
+    {
+        $this->middleware('admin')->except(['show', 'search']);
+    }
+    
     //Show the form to create a new product
     public function create()
     {

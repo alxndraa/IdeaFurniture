@@ -20,15 +20,19 @@
                             <h5 class="card-title">
                                 <a href="/product/{{$product->id}}">{{ $product->name }}</a>
                             </h5>
-                            <p class="card-text">Rp. {{ $product->price }}</p>
+                            <p class="card-text">Rp {{ number_format($product->price, 0, ",", ".") }}</p>
                             <p class="card-text">{{ $product->desc }}</p>
 
-                            <a href="/product/{{$product->id}}/edit" class="btn btn-primary">Update</a>
-                            <form action="/product/{{$product->id}}" method="post" style="display:inline">
-                                @csrf
-                                @method("DELETE")
-                                <input type="submit" class="btn btn-outline-danger" value="Delete">
-                            </form>
+                            @auth
+                                @if(Auth::user()->role == 'admin')
+                                    <a href="/product/{{$product->id}}/edit" class="btn btn-primary">Update</a>
+                                    <form action="/product/{{$product->id}}" method="post" style="display:inline">
+                                        @csrf
+                                        @method("DELETE")
+                                        <input type="submit" class="btn btn-outline-danger" value="Delete">
+                                    </form>
+                                @endif
+                            @endauth
                         </div>
                     </div>
                 </div>
