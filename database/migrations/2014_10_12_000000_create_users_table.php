@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('address');
             $table->string('gender');
             $table->date('dob');
-            $table->string('role');
+            $table->string('role')->nullable();
             $table->rememberToken();
         });
     }
