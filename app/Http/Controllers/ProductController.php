@@ -6,6 +6,7 @@ use App\Product;
 use App\ProductType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -19,6 +20,7 @@ class ProductController extends Controller
     //Store the new product in storage
     public function store(Request $request)
     {
+        $path = NULL;
         //Validate user input
         $request->validate([
             'name' => 'required|min:5',
@@ -29,10 +31,21 @@ class ProductController extends Controller
             'desc' => 'required|min:15',
         ]);
 
+        if($request->image != NULL){
+            $image = $request->file('image');
+            #$typeID = $request['type'];
+            #$productID = Product::where('product_type_id', '=', "$typeID")->latest()->get()->first()->id + 1;
+            #$filename = $typeID . $productID . '.' . $image->extension();
+            
+            $imagePath = Storage::disk('public')->put('assets/products', $image);
+        }else{
+            $imagePath = 'assets/no_img.png';
+        }
+        
         //Create a new product instance with the inputted values
         $product = new Product([
             'name' => $request['name'],
-            'image' => $request['image'],
+            'image' => $imagePath,
             'product_type_id' => $request['type'],
             'stock' => $request['stock'],
             'price' => $request['price'],
@@ -65,7 +78,7 @@ class ProductController extends Controller
         //Validate the input
         $request->validate([
             'name' => 'required|min:5',
-            'image' => 'mimes:jpeg,gif,png',
+            'image' => 'mimes:jpeg,gif,png|max:2M',
             'type' => 'required|exists:App\productType,id',
             'stock' => 'required|integer|min:1',
             'price' => 'required|integer|min:1',
@@ -96,6 +109,10 @@ class ProductController extends Controller
         //Initialized variable oldName's value with the product name
         //oldName will be used in the success message
         $oldName = $product->name;
+
+        //delete image from storage
+        Storage::disk('public')->delete($product->image);
+
         $product->delete(); //Delete the product from database
         
         //Redirect to a productType's show page with a success message

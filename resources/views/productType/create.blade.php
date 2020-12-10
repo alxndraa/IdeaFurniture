@@ -24,7 +24,10 @@
 
                     <div class="form-group">
                         <label for="image">Image</label>
-                        <input type="file" name="image" id="image" class="form-control">
+                        <input type="file" name="image" id="image" class="form-control @error('image') is-invalid @enderror">
+                        @error('image') <!-- if name ga valid !-->
+                            <div class="invalid-feedback">{{ $message }}</div> <!-- display the first error message !-->
+                        @enderror
                     </div>
                     
                     <input class="btn btn-primary card-link" type="submit" value="Submit">

@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('desc');
             $table->integer('price');
             $table->integer('stock');
+            $table->timestamps();
 
             $table->foreign('product_type_id')->references('id')->on('product_types')->onUpdate('cascade')->onDelete('cascade');
         });

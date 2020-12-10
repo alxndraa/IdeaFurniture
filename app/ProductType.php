@@ -17,7 +17,4 @@ class ProductType extends Model
     protected $fillable = [
         'name', 'image',
     ];
-
-    #no updated_at and created_at columns
-    public $timestamps = false;
 }
