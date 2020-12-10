@@ -16,13 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'ProductTypeController@index')->name('homepage');
 
-#Route::get('/{id}', 'ProductController@index');
-#Route::get('/{id}/show', 'ProductController@show');
-
 //('name', 'controller')
 Route::resource('productType', 'ProductTypeController');
 Route::resource('product', 'ProductController');
-
+Route::get('/search/{id}', 'ProductController@search');
 
 Auth::routes();
 

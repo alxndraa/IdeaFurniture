@@ -1,9 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+    <form method="get" action="/search/{{$productType->id}}" class="form-inline float-right">
+        @csrf
+        <input type="text" name="search" id="search" class="form-control" placeholder="Search product">
+        <input type="submit" class="btn btn-primary" value="Search">
+    </form>
+
+    <h1 class="text-center">{{ $productType->name }}</h1>
+
     <div class="container">
+        <hr>
         <div class="row row-cols-3">
-            @foreach($productType->products as $product)
+            @foreach($products as $product)
                 <div class="col mb-4">
                     <div class="card">
                         <img src="" alt="" class="card-img-top">
@@ -26,6 +35,6 @@
             @endforeach
         </div>
 
-        {{ $productType->products->links() }}
+        {{ $products->links() }}
     </div>
 @endsection

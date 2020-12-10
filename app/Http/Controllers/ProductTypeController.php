@@ -66,8 +66,8 @@ class ProductTypeController extends Controller
      */
     public function show(ProductType $productType)
     {
-        $productType->products = $productType->products->toQuery()->paginate(10);
-        return view('productType.show', ['productType' => $productType]);
+        $products = $productType->products->toQuery()->paginate(10);
+        return view('productType.show', ['products' => $products, 'productType' => $productType]);
     }
 
     /**
