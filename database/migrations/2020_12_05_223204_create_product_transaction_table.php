@@ -18,6 +18,7 @@ class CreateProductTransactionTable extends Migration
             $table->unsignedBigInteger('transaction_id');
             $table->integer('quantity');
 
+            $table->primary(['product_id', 'transaction_id']);
             $table->foreign('product_id')->references('id')->on('products');
             $table->foreign('transaction_id')->references('id')->on('transactions');
         });

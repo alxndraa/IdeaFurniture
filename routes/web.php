@@ -31,3 +31,6 @@ Route::post('/{user_id}/{product_id}/detach', 'CartController@detach');
 
 //view shopping cart
 Route::get('/cart/{id}', 'CartController@index');
+
+//transcation routes
+Route::post('/transaction/checkout/{user_id}', 'TransactionController@store');

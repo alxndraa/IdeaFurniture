@@ -50,7 +50,17 @@
                         <input type="submit" class="btn btn-outline-danger" value="&#10005;">
                     </form>
                 </div>
+
+                @php($grandTotal = $grandTotal + ($cartItem->price * $cartItem->pivot->quantity))
             @endforeach
+
+            <div class="row">
+                <h5>Grand Total: {{ number_format($grandTotal, 0, ",", ".") }}</h5>
+                <form action="/transaction/checkout/{{Auth::user()->id}}" method="post" style="display:inline">
+                    @csrf
+                    <input type="submit" class="btn btn-primary" value="Check Out">
+                </form>
+            </div>
         @endif
     </div>
 @endsection

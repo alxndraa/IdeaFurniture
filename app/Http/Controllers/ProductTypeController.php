@@ -105,6 +105,12 @@ class ProductTypeController extends Controller
             'name' => $request['name'],
             'image' => $imagePath,
         ]);
+        $productType->save(); #save the instance
+
+        $productType->update([
+            'name' => $request['name'],
+            'image' => $request['image'],
+        ]);
         $productType->save();
 
         return $this->index()->with([

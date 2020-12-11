@@ -3,18 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Transaction;
+use App\User;
 use Illuminate\Http\Request;
 
 class TransactionController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    //only member that can access this
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    //Display all transaction
     public function index()
     {
-        //
+        $transactions = Transaction::all();
+        return view('history', ['transactions' => $transactions]);
     }
 
     /**
@@ -33,11 +37,34 @@ class TransactionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store($id)
     {
-        //
+        $transaction = new Transaction([
+            'user_id' => $id,
+            'date' => date('Y-m-d H:i:s'),
+        ]);
+        $transaction->save();
+        
+        return $this->attach($id);
     }
 
+    public function attach($id)
+    {
+        $user = User::find($id);
+        $cartItems = $user->products;
+
+        foreach($cartItems as $cartItem){
+            $cartItem->transactions()->attach($id,[
+                'quantity' => $cartItem->pivot->quantity,
+            ]);
+            //$cartItem->users()->detach($id);
+        }
+
+        return view('cart')->with([
+            'cartItems' => $cartItems,
+            'message' => "Purchase success!",
+        ]);
+    }
     /**
      * Display the specified resource.
      *

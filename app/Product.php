@@ -14,6 +14,10 @@ class Product extends Model
         return $this->belongsToMany(User::class)->withPivot('quantity');
     }
 
+    public function transactions(){
+        return $this->belongsToMany(Transaction::class)->withPivot('quantity');
+    }
+
     protected $fillable = [
         'product_type_id', 'name', 'image', 'desc', 'price', 'stock',
     ];
