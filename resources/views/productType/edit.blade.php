@@ -10,10 +10,10 @@
                     So only us in this session that can do the post
                     Prevent other people from manipulating our data from the outside  !-->
                     @csrf
-                    @method("PUT") <!-- HTML only accept method get and post, so add this so laravel knows we are sending a put request !-->
+                    @method("PATCH") <!-- HTML only accept method get and post, so add this so laravel knows we are sending a patch request !-->
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" value="{{ $productType->name ?? old('name') }}">
+                        <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') ?? $productType->name }}">
                         @error('name') <!-- if name ga valid !-->
                             <div class="invalid-feedback">{{ $message }}</div> <!-- display the first error message !-->
                         @enderror
@@ -26,7 +26,10 @@
 
                     <div class="form-group">
                         <label for="image">Image</label>
-                        <input type="file" name="image" id="image" class="form-control">
+                        <input type="file" name="image" id="image" class="form-control @error('image') is-invalid @enderror">
+                        @error('image')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
                     
                     <input class="btn btn-primary card-link" type="submit" value="Submit">

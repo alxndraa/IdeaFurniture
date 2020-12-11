@@ -18,7 +18,7 @@
 
                     <div class="form-group">
                         <label for="image">Image</label>
-                        <input type="file" name="image" id="image" class="form-control-file @error('name') is-invalid @enderror" style="border:solid 1px LightGray; border-radius:3px;">
+                        <input type="file" name="image" id="image" class="form-control @error('image') is-invalid @enderror">
                         @error('image')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror

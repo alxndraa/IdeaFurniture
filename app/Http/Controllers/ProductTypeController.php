@@ -39,7 +39,7 @@ class ProductTypeController extends Controller
         #validation
         $request->validate([
             'name' => 'required|min:4',
-            'image' => 'mimes:jpeg,gif,png',
+            'image' => 'mimes:jpeg,gif,png|max:2000',
         ]);
 
         if($request->image != NULL){
@@ -87,12 +87,23 @@ class ProductTypeController extends Controller
     {
         $request->validate([
             'name' => 'required|min:4',
-            'image' => 'mimes:jpeg,gif,png|max:2M',
+            'image' => 'mimes:jpeg,gif,png|max:2000',
         ]);
+
+        if($request->image != NULL){
+            $image = $request->file('image');
+            #$typeID = ProductType::all()->last()->id + 1;
+            #$filename = $typeID . '.' . $image->extension();
+            
+            #$imagePath = Storage::disk('public')->putFileAs('assets/productTypes', $image, $filename);
+            $imagePath = Storage::disk('public')->put('assets/productTypes', $image);
+        }else{
+            $imagePath = 'assets/no_img.png';
+        }
 
         $productType->update([
             'name' => $request['name'],
-            'image' => $request['image'],
+            'image' => $imagePath,
         ]);
         $productType->save();
 

@@ -55,8 +55,8 @@
                             @endif
                         @else
                             @if(Auth::user()->role == 'admin')
-                            <a href="/productType/create" class="nav-link">Add Product</a>
-                            <a href="/product/create" class="nav-link">Add Product Type</a>
+                            <a href="/product/create" class="nav-link">Add Product</a>
+                            <a href="/productType/create" class="nav-link">Add Product Type</a>
                             @endif
 
                             <li class="nav-item dropdown">

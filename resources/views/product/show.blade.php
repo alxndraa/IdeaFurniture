@@ -19,19 +19,24 @@
             <div class="col">
                 <h1>{{ $product->name }}</h1>
                 <p>{{ $product->desc }}</p>
-                <h5>Rp {{ $product->price }}</h5>
+                <h5>Rp {{ number_format($product->price, 0, ",", ".") }}</h5>
                 <p>Stock : {{ $product->stock }}</p>
 
-                <form action="">
-                    <div class="form-group">
-                        <label for="qty">Quantity</label>
-                        <input type="number" name="qty" id="qty" class="form-control @error('qty') is-invalid @enderror" value="{{ old('qty') }}">
-                        @error('qty')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-                    <input class="btn btn-primary card-link" type="submit" value="Add to Cart">
-                </form>
+                @auth
+                    @if(Auth::user()->role == 'member')
+                        <form action="/{{Auth::user()->id}}/{{$product->id}}/{amount}/attach">
+                            <div class="form-group">
+                                <label for="qty">Quantity</label>
+                                <input type="number" name="qty" id="qty" class="form-control @error('qty') is-invalid @enderror" value="{{ old('qty') }}">
+                                @error('qty')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <input type="submit" class="btn btn-primary card-link" {{ $product->stock < 1 ? 'disabled' : '' }} value="{{ $product->stock < 1 ? 'Out of Stock' : 'Add to Cart' }}">
+                        </form>
+                    @endif
+                @endauth
             </div>
 
             </div>

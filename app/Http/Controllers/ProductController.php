@@ -32,7 +32,7 @@ class ProductController extends Controller
         //Validate user input
         $request->validate([
             'name' => 'required|min:5',
-            'image' => 'mimes:jpeg,gif,png',
+            'image' => 'mimes:jpeg,gif,png|max:2000',
             'type' => 'required|exists:App\productType,id',
             'stock' => 'required|integer|min:1',
             'price' => 'required|integer|min:1',
@@ -86,7 +86,7 @@ class ProductController extends Controller
         //Validate the input
         $request->validate([
             'name' => 'required|min:5',
-            'image' => 'mimes:jpeg,gif,png|max:2M',
+            'image' => 'mimes:jpeg,gif,png|max:2000',
             'type' => 'required|exists:App\productType,id',
             'stock' => 'required|integer|min:1',
             'price' => 'required|integer|min:1',
