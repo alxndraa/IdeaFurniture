@@ -45,7 +45,7 @@ class CartController extends Controller
     public function detach($userId, $productId)
     {
         $product = Product::find($productId);
-        $product->user()->detach($userId);
+        $product->users()->detach($userId);
         
         return back()->with([
             'message' => "<b>" . $product->name . "</b> has been removed from your shopping cart"

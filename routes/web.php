@@ -27,7 +27,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //attach or detach product to user (add to product_user pivot table / cart)
 Route::get('/{user_id}/{product_id}/attach', 'CartController@attach');
-Route::get('/{user_id}/{product_id}/detach', 'CartController@detach');
+Route::post('/{user_id}/{product_id}/detach', 'CartController@detach');
 
 //view shopping cart
 Route::get('/cart/{id}', 'CartController@index');
