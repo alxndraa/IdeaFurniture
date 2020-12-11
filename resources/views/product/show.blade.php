@@ -24,11 +24,11 @@
 
                 @auth
                     @if(Auth::user()->role == 'member')
-                        <form action="/{{Auth::user()->id}}/{{$product->id}}/{amount}/attach">
+                        <form action="/{{Auth::user()->id}}/{{$product->id}}/attach">
                             <div class="form-group">
-                                <label for="qty">Quantity</label>
-                                <input type="number" name="qty" id="qty" class="form-control @error('qty') is-invalid @enderror" value="{{ old('qty') }}">
-                                @error('qty')
+                                <label for="quantity">Quantity</label>
+                                <input type="number" name="quantity" id="quantity" class="form-control @error('quantity') is-invalid @enderror" value="{{ old('quantity') }}">
+                                @error('quantity')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>

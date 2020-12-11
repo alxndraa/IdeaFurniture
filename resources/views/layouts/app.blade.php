@@ -67,7 +67,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     @if(Auth::user()->role !== 'admin')
                                         <a href="/edit_Profile" class="dropdown-item">Edit Profile</a>
-                                        <a href="/cart" class="dropdown-item">Shopping Cart</a>
+                                        <a href="/cart/{{Auth::user()->id}}" class="dropdown-item">Shopping Cart</a>
                                         <a href="/history" class="dropdown-item">Transaction History</a>
 
                                         <hr class="dropdown-divide">

@@ -14,21 +14,37 @@ class CartController extends Controller
         $this->middleware('auth');
     }
 
-    public function attach($userId, $productId, $amount){
+    public function index($id){
+        $user = User::find($id);
+        $products = Product::all();
+        $cartItems = $user->products;
+
+        return view('cart', ['cartItems' => $cartItems]);
+    }
+
+    public function attach(Request $request, $userId, $productId)
+    {
         $product = Product::find($productId);
+        $stock = $product->stock;
+
         $user = User::find($userId);
 
-        $product->user()->attach($userId);
-        
+        $request->validate([
+            'quantity' => ['required', 'numeric', 'min:1', 'max:' . $stock],
+        ]);
+
+        $product->users()->attach($userId,[
+            'quantity' => $request['quantity'],
+        ]);
+
         return back()->with([
             'message' => "<b>" . $product->name . "</b> has been added to your shopping cart"
         ]);
     }
 
-    public function detach($userId, $productId, $amount){
+    public function detach($userId, $productId)
+    {
         $product = Product::find($productId);
-        $user = User::find($userId);
-
         $product->user()->detach($userId);
         
         return back()->with([
