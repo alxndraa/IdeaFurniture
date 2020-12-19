@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col image-container">
-                <img src="" alt="">
+                <img src="{{ asset('storage/'.$product->image) }}">
             </div>
 
             <div class="col">

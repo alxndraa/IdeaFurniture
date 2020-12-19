@@ -15,7 +15,7 @@
             @foreach($products as $product)
                 <div class="col mb-4">
                     <div class="card">
-                        <img src="" alt="" class="card-img-top">
+                        <img src="{{ asset('storage/'.$product->image) }}" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <a href="/product/{{$product->id}}">{{ $product->name }}</a>

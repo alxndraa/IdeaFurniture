@@ -6,7 +6,7 @@
             @foreach($productTypes as $productType)
                 <div class="col mb-4">
                     <div class="card">
-                        <img src="" alt="" class="card-img-top">
+                        <img src="{{ asset('storage/'.$productType->image) }}" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <a href="/productType/{{$productType->id}}">{{ $productType->name }}</a>
