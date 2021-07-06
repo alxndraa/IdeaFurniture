@@ -1,0 +1,93 @@
+.text-gray {
+    color: #7F7F85;
+}
+
+.text-orange {
+    color: #fc8364;
+}
+
+.title {
+    font-family: 'Hammersmith One';
+    font-size: xx-large;
+    text-align: center;
+    letter-spacing: -0.05em;
+}
+
+.banner {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-img {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.banner-title {
+    position: absolute;
+    align-self: center;
+    color: white;
+    z-index: 2;
+    font-size: 5em;
+}
+
+.one-page-container {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient-background {
+    background: linear-gradient(90deg, #fcb37c, #fc8364);
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-body {
+    align-self: center;
+}
+
+.card-title {
+    font-family: 'Hammersmith One';
+    font-size: large;
+    letter-spacing: 0.01em;
+    margin: 0;
+}
+
+.card-subtitle {
+    color: #7F7F85;
+    font-style: italic;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: max-content;
+    gap: 3rem;
+}
+
+.grid-item {
+    border-radius: 0.5em;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+}
+
+.grid-item-img {
+    height: 240px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.btn-primary {
+    background-color: #F28000;
+    border: none;
+}

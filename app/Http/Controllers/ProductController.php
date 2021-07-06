@@ -39,12 +39,9 @@ class ProductController extends Controller
             'desc' => 'required|min:15',
         ]);
 
+        //Store image to storage
         if($request->image != NULL){
             $image = $request->file('image');
-            #$typeID = $request['type'];
-            #$productID = Product::where('product_type_id', '=', "$typeID")->latest()->get()->first()->id + 1;
-            #$filename = $typeID . $productID . '.' . $image->extension();
-            
             $imagePath = Storage::disk('public')->put('assets/products', $image);
         }else{
             $imagePath = 'assets/no_img.png';

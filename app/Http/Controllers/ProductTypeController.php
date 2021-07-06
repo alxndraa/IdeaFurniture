@@ -17,14 +17,6 @@ class ProductTypeController extends Controller
         $this->middleware('admin')->except(['index', 'show']);
     }
 
-    //Display all the product types
-    public function index()
-    {   
-        #uses all() eloquent function to retrieve all product types
-        $productTypes = ProductType::all();
-        return view('productType.index', ['productTypes' => $productTypes]);
-    }
-
     //Show the form to create a new product type
     public function create()
     {
@@ -72,7 +64,7 @@ class ProductTypeController extends Controller
     //Ex: products that is classified as bed frames
     public function show(ProductType $productType)
     {
-        $products = $productType->products->toQuery()->paginate(10);
+        $products = $productType->products->toQuery()->paginate(12);
         return view('productType.show', ['products' => $products, 'productType' => $productType]);
     }
 

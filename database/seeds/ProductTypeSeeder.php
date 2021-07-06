@@ -13,15 +13,12 @@ class ProductTypeSeeder extends Seeder
     public function run()
     {
         DB::table('product_types')->insert([
-            ['id'=>1, 'name'=>'Bathroom Furniture'],
-            ['id'=>2, 'name'=>'Bed Frames'],
-            ['id'=>3, 'name'=>'Bookshelves'],
-            ['id'=>4, 'name'=>'Dinnerware'],
-            ['id'=>5, 'name'=>'Home Desks'],
-            ['id'=>6, 'name'=>'Kitchen Furnitures'],
-            ['id'=>7, 'name'=>'Office Chairs'],
-            ['id'=>8, 'name'=>'Sofas'],
-            ['id'=>9, 'name'=>'Wardrobes'],
+            ['id'=>1, 'name'=>'Bedroom', 'image'=>'assets/productTypes/01.jpg'],
+            ['id'=>2, 'name'=>'Bathroom', 'image'=>'assets/productTypes/02.jpg'],
+            ['id'=>3, 'name'=>'Living Room', 'image'=>'assets/productTypes/03.jpg'],
+            ['id'=>4, 'name'=>'Kitchen', 'image'=>'assets/productTypes/04.jpg'],
+            ['id'=>5, 'name'=>'Dining', 'image'=>'assets/productTypes/05.jpg'],
+            ['id'=>6, 'name'=>'Office', 'image'=>'assets/productTypes/06.jpg']
         ]);
     }
 }

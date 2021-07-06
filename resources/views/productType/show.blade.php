@@ -1,44 +1,62 @@
 @extends('layouts.app')
 
+@section('style')
+<style>
+    .banner {
+        height: 35vh;
+    }
+    .banner::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        background: linear-gradient(90deg, rgba(255,255,255,0), rgba(0, 0, 0, 0.2) , rgba(255,255,255,0));
+    }
+</style>
+@endsection
+
 @section('content')
-    <form method="get" action="/search/{{$productType->id}}" class="form-inline float-right">
-        @csrf
-        <input type="text" name="search" id="search" class="form-control" placeholder="Search product">
-        <input type="submit" class="btn btn-primary" value="Search">
-    </form>
+    <div class="banner">
+        <img class="banner-img" src="{{ asset('storage/'.$productType->image) }}" alt="">
+        <h1 class="banner-title ">{{ $productType->name }}</h1>
+    </div>
 
-    <h1 class="text-center">{{ $productType->name }}</h1>
+    <div class="container py-5">
+        <div class="d-flex justify-content-between">
+            <span class="bold"> Total products: {{ $products->total() }} </span>
+            {{ $products->links() }}
+        </div>
 
-    <div class="container">
-        <hr>
-        <div class="row row-cols-3">
+        <div class="grid-container">
             @foreach($products as $product)
-                <div class="col mb-4">
-                    <div class="card">
-                        <img src="{{ asset('storage/'.$product->image) }}" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="/product/{{$product->id}}">{{ $product->name }}</a>
-                            </h5>
-                            <p class="card-text">Rp {{ number_format($product->price, 0, ",", ".") }}</p>
-                            <p class="card-text">{{ $product->desc }}</p>
+                <div class="grid-item" onclick="location.href='/product/{{$product->id}}'">
+                    <img src="{{ asset('storage/'.$product->image) }}" alt="" class="grid-item-img">
 
-                            @auth
-                                @if(Auth::user()->role == 'admin')
-                                    <a href="/product/{{$product->id}}/edit" class="btn btn-primary">Update</a>
-                                    <form action="/product/{{$product->id}}" method="post" style="display:inline">
-                                        @csrf
-                                        @method("DELETE")
-                                        <input type="submit" class="btn btn-outline-danger" value="Delete">
-                                    </form>
-                                @endif
-                            @endauth
-                        </div>
+                    <div class="grid-item-body my-4">
+                        <div class="card-title text-orange">{{ $product->name }}</div>
+                        <div class="card-subtitle">{{ $product->desc }}</div>
+                        <div class="font-weight-bold">Rp {{ number_format($product->price, 0, ",", ".") }}</div>
                     </div>
                 </div>
             @endforeach
         </div>
 
-        {{ $products->links() }}
+        <span class="d-flex justify-content-end">{{ $products->links() }}</span>
     </div>
+    
+    <!--
+    @auth
+        @if(Auth::user()->role == 'admin')
+            <a href="/product/{{$product->id}}/edit" class="btn btn-primary">Update</a>
+            <form action="/product/{{$product->id}}" method="post" style="display:inline">
+                @csrf
+                @method("DELETE")
+                <input type="submit" class="btn btn-outline-danger" value="Delete">
+            </form>
+        @endif
+    @endauth
+    -->
 @endsection

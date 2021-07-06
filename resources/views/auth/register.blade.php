@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="card mx-auto" style="width: 25rem;">
-        <div class="card-header">{{ __('Register') }}</div>
-        <div class="card-body">
+<div class="one-page-container gradient-background">
+    <div class="card mx-auto my-5" style="width: 30em;">
+        <div class="title text-gray mt-5">{{ __('Register') }}</div>
+        
+        <div class="card-body" style="width: 80%;">
             <form action="{{ route('register') }}" method="POST">
                 @csrf
                 <div class="form-group">
@@ -72,8 +73,12 @@
                     @enderror
                 </div>
                 
-                <input type="submit" class="btn btn-primary" value="{{ __('Register') }}">
+                <input type="submit" class="btn btn-primary mb-3" value="{{ __('Register') }}" style="width: 100%;">
             </form>
+        </div>
+
+        <div class="card-footer text-center">
+            Already have an account? <a href="{{ route('login') }}">{{ __('Login') }}</a>
         </div>
     </div>
 </div>

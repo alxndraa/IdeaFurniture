@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="card mx-auto" style="width: 25rem;">
-        <div class="card-header">{{ __('Login') }}</div>
-        <div class="card-body">
+<div class="one-page-container gradient-background">
+    <div class="card mx-auto shadow" style="width: 30em;">
+        <div class="title text-gray mt-5">{{ __('Login') }}</div>
+
+        <div class="card-body" style="width: 80%;">
             <form action="{{ route('login') }}" method="POST">
                 @csrf
                 <div class="form-group">
@@ -22,8 +23,8 @@
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
-
-                <div class="form-check">
+                
+                <div class="form-check d-inline-block">
                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                     <label class="form-check-label" for="remember">
@@ -31,20 +32,20 @@
                     </label>
                 </div>
 
-                <div class="form-group row">
-                    <div class="col mt-3">
-                        <button type="submit" class="btn btn-primary">
-                            {{ __('Login') }}
-                        </button>
+                @if (Route::has('password.request'))
+                    <a class="btn-link d-inline-block float-right" href="{{ route('password.request') }}">
+                        {{ __('Forgot Your Password?') }}
+                    </a>
+                @endif
 
-                        @if (Route::has('password.request'))
-                            <a class="btn btn-link" href="{{ route('password.request') }}">
-                                {{ __('Forgot Your Password?') }}
-                            </a>
-                        @endif
-                    </div>
-                </div>
+                <button type="submit" class="btn btn-primary my-3" style="width: 100%;">
+                    {{ __('Login') }}
+                </button>
             </form>
+        </div>
+
+        <div class="card-footer text-center">
+            Don't have an account? <a href="{{ route('register') }}">{{ __('Register') }}</a>
         </div>
     </div>
 </div>
